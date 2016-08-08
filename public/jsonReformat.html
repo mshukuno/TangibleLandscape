@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Smoothed D3.js Radar Chart</title>
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <!-- D3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="js/d3.min.js"></script>
+    <style>
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        fill: #242424;
+        /*text-align: center;*/
+        text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+        cursor: default;
+    }
+    
+    .tooltip {
+        fill: #333333;
+    }
+    </style>
+</head>
+
+<body>
+    <script>
+    var results = [{
+        "try": 1,
+        "n_dead_oaks": 58037,
+        "percent_dead_oaks": 6.028,
+        "infected_area_ha": 3407,
+        "money_spent": 796705,
+        "area_treated_ha": 59,
+        "price_per_oak": -635.8379888,
+        "player": {
+            "name": "Reese"
+        }
+    }, {
+        "try": 2,
+        "n_dead_oaks": 33571,
+        "percent_dead_oaks": 3.487,
+        "infected_area_ha": 2555,
+        "money_spent": 1841047,
+        "area_treated_ha": 104,
+        "price_per_oak": 79.31103261,
+        "player": {
+            "name": "Reese"
+        }
+    }, {
+        "try": 3,
+        "n_dead_oaks": 46111,
+        "percent_dead_oaks": 4.79,
+        "infected_area_ha": 2762,
+        "money_spent": 1176461,
+        "area_treated_ha": 61,
+        "price_per_oak": 110.227771,
+        "player": {
+            "name": "Reese"
+        }
+    }, {
+        "try": 1,
+        "n_dead_oaks": 54688,
+        "percent_dead_oaks": 5.68,
+        "infected_area_ha": 3485,
+        "money_spent": 379015,
+        "area_treated_ha": 62,
+        "price_per_oak": 180.8277672,
+        "player": {
+            "name": "Forest"
+        }
+    }, {
+        "try": 2,
+        "n_dead_oaks": 53257,
+        "percent_dead_oaks": 5.532,
+        "infected_area_ha": 3480,
+        "money_spent": 604700,
+        "area_treated_ha": 59,
+        "price_per_oak": 171.4488234,
+        "player": {
+            "name": "Forest"
+        }
+    }, {
+        "try": 3,
+        "n_dead_oaks": 47640,
+        "percent_dead_oaks": 4.948,
+        "infected_area_ha": 3028,
+        "money_spent": 5879199,
+        "area_treated_ha": 463,
+        "price_per_oak": 642.957021,
+        "player": {
+            "name": "Forest"
+        }
+    }]
+
+
+    var dataKeys = {
+        "n_dead_oaks": 'Number of Dead Oaks',
+        'percent_dead_oaks': 'Percentage of Dead Oaks',
+        'infected_area_ha': 'Infected Area (ha)',
+        'money_spent': 'Money_Spent',
+        'area_treated_ha': 'Area Treated (ha)',
+        'price_per_oak': 'Price per Oak'
+    }
+
+    
+
+function barLineChartFormatData(results, dataKeys){
+	var keys = d3.keys(results[0]);
+	var data = {}
+	// Create a new data format
+    $.each(dataKeys, function(key, value) {
+        data[key] = {
+            'title': dataKeys[key],
+            'value': []
+        }
+    })
+
+    // Insert results data in to a new data
+    $.each(results, function(idx, val) {
+        for (var i in keys) {
+            var key = keys[i];
+            if (key in data === true) {
+                data[key].value.push({
+                    'Y': val[key],
+                    'scenario': val.player.name + ' ' + val.try
+                });
+            }
+        }
+    });
+    return data;
+}
+
+barLineChartFormatData(results, dataKeys);    
+    </script>
+</body>
+
+</html>

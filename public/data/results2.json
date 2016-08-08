@@ -1,0 +1,464 @@
+{
+    "area_treated_ha": {
+        "title": "Area Treated (ha)", 
+        "value": [
+            {
+                "Y": 0, 
+                "scenario": "baseline"
+            }, 
+            {
+                "Y": 35, 
+                "scenario": "scen2"
+            }, 
+            {
+                "Y": 59, 
+                "scenario": "RS_1"
+            }, 
+            {
+                "Y": 104, 
+                "scenario": "RS_2"
+            }, 
+            {
+                "Y": 61, 
+                "scenario": "RS_3"
+            }, 
+            {
+                "Y": 62, 
+                "scenario": "FM_1"
+            }, 
+            {
+                "Y": 59, 
+                "scenario": "FM_2"
+            }, 
+            {
+                "Y": 463, 
+                "scenario": "FM_3"
+            }, 
+            {
+                "Y": 55, 
+                "scenario": "LO_1"
+            }, 
+            {
+                "Y": 52, 
+                "scenario": "LO_2"
+            }, 
+            {
+                "Y": 58, 
+                "scenario": "LO_3"
+            }, 
+            {
+                "Y": 62, 
+                "scenario": "FM_4"
+            }, 
+            {
+                "Y": 62, 
+                "scenario": "FM_4_2"
+            }, 
+            {
+                "Y": 62, 
+                "scenario": "EN_1"
+            }, 
+            {
+                "Y": 61, 
+                "scenario": "MP_1"
+            }, 
+            {
+                "Y": 60, 
+                "scenario": "MP_2"
+            }, 
+            {
+                "Y": 62, 
+                "scenario": "MP_3"
+            }, 
+            {
+                "Y": 62, 
+                "scenario": "MP_4"
+            }
+        ]
+    }, 
+    "infected_area_ha": {
+        "title": "Infected Area (ha)", 
+        "value": [
+            {
+                "Y": 3417, 
+                "scenario": "baseline"
+            }, 
+            {
+                "Y": 3294, 
+                "scenario": "scen2"
+            }, 
+            {
+                "Y": 3407, 
+                "scenario": "RS_1"
+            }, 
+            {
+                "Y": 2555, 
+                "scenario": "RS_2"
+            }, 
+            {
+                "Y": 2762, 
+                "scenario": "RS_3"
+            }, 
+            {
+                "Y": 3485, 
+                "scenario": "FM_1"
+            }, 
+            {
+                "Y": 3480, 
+                "scenario": "FM_2"
+            }, 
+            {
+                "Y": 3028, 
+                "scenario": "FM_3"
+            }, 
+            {
+                "Y": 3203, 
+                "scenario": "LO_1"
+            }, 
+            {
+                "Y": 3426, 
+                "scenario": "LO_2"
+            }, 
+            {
+                "Y": 3252, 
+                "scenario": "LO_3"
+            }, 
+            {
+                "Y": 3345, 
+                "scenario": "FM_4"
+            }, 
+            {
+                "Y": 3345, 
+                "scenario": "FM_4_2"
+            }, 
+            {
+                "Y": 2742, 
+                "scenario": "EN_1"
+            }, 
+            {
+                "Y": 3258, 
+                "scenario": "MP_1"
+            }, 
+            {
+                "Y": 3072, 
+                "scenario": "MP_2"
+            }, 
+            {
+                "Y": 2980, 
+                "scenario": "MP_3"
+            }, 
+            {
+                "Y": 3093, 
+                "scenario": "MP_4"
+            }
+        ]
+    }, 
+    "money_spent": {
+        "title": "Money Spent", 
+        "value": [
+            {
+                "Y": 0, 
+                "scenario": "baseline"
+            }, 
+            {
+                "Y": 382036, 
+                "scenario": "scen2"
+            }, 
+            {
+                "Y": 796705, 
+                "scenario": "RS_1"
+            }, 
+            {
+                "Y": 1841047, 
+                "scenario": "RS_2"
+            }, 
+            {
+                "Y": 1176461, 
+                "scenario": "RS_3"
+            }, 
+            {
+                "Y": 379015, 
+                "scenario": "FM_1"
+            }, 
+            {
+                "Y": 604700, 
+                "scenario": "FM_2"
+            }, 
+            {
+                "Y": 5879199, 
+                "scenario": "FM_3"
+            }, 
+            {
+                "Y": 624835, 
+                "scenario": "LO_1"
+            }, 
+            {
+                "Y": 609931, 
+                "scenario": "LO_2"
+            }, 
+            {
+                "Y": 467095, 
+                "scenario": "LO_3"
+            }, 
+            {
+                "Y": 554250, 
+                "scenario": "FM_4"
+            }, 
+            {
+                "Y": 554250, 
+                "scenario": "FM_4_2"
+            }, 
+            {
+                "Y": 694901, 
+                "scenario": "EN_1"
+            }, 
+            {
+                "Y": 568524, 
+                "scenario": "MP_1"
+            }, 
+            {
+                "Y": 577753, 
+                "scenario": "MP_2"
+            }, 
+            {
+                "Y": 824715, 
+                "scenario": "MP_3"
+            }, 
+            {
+                "Y": 817210, 
+                "scenario": "MP_4"
+            }
+        ]
+    }, 
+    "n_dead_oaks": {
+        "title": "Number of Dead Oaks", 
+        "value": [
+            {
+                "Y": 56784, 
+                "scenario": "baseline"
+            }, 
+            {
+                "Y": 52725, 
+                "scenario": "scen2"
+            }, 
+            {
+                "Y": 58037, 
+                "scenario": "RS_1"
+            }, 
+            {
+                "Y": 33571, 
+                "scenario": "RS_2"
+            }, 
+            {
+                "Y": 46111, 
+                "scenario": "RS_3"
+            }, 
+            {
+                "Y": 54688, 
+                "scenario": "FM_1"
+            }, 
+            {
+                "Y": 53257, 
+                "scenario": "FM_2"
+            }, 
+            {
+                "Y": 47640, 
+                "scenario": "FM_3"
+            }, 
+            {
+                "Y": 54710, 
+                "scenario": "LO_1"
+            }, 
+            {
+                "Y": 56317, 
+                "scenario": "LO_2"
+            }, 
+            {
+                "Y": 54093, 
+                "scenario": "LO_3"
+            }, 
+            {
+                "Y": 57106, 
+                "scenario": "FM_4"
+            }, 
+            {
+                "Y": 57106, 
+                "scenario": "FM_4_2"
+            }, 
+            {
+                "Y": 39912, 
+                "scenario": "EN_1"
+            }, 
+            {
+                "Y": 51515, 
+                "scenario": "MP_1"
+            }, 
+            {
+                "Y": 47026, 
+                "scenario": "MP_2"
+            }, 
+            {
+                "Y": 45634, 
+                "scenario": "MP_3"
+            }, 
+            {
+                "Y": 46207, 
+                "scenario": "MP_4"
+            }
+        ]
+    }, 
+    "percent_dead_oaks": {
+        "title": "Percentage of Dead Oaks", 
+        "value": [
+            {
+                "Y": 5.898, 
+                "scenario": "baseline"
+            }, 
+            {
+                "Y": 5.477, 
+                "scenario": "scen2"
+            }, 
+            {
+                "Y": 6.028, 
+                "scenario": "RS_1"
+            }, 
+            {
+                "Y": 3.487, 
+                "scenario": "RS_2"
+            }, 
+            {
+                "Y": 4.79, 
+                "scenario": "RS_3"
+            }, 
+            {
+                "Y": 5.68, 
+                "scenario": "FM_1"
+            }, 
+            {
+                "Y": 5.532, 
+                "scenario": "FM_2"
+            }, 
+            {
+                "Y": 4.948, 
+                "scenario": "FM_3"
+            }, 
+            {
+                "Y": 5.683, 
+                "scenario": "LO_1"
+            }, 
+            {
+                "Y": 5.85, 
+                "scenario": "LO_2"
+            }, 
+            {
+                "Y": 5.619, 
+                "scenario": "LO_3"
+            }, 
+            {
+                "Y": 5.932, 
+                "scenario": "FM_4"
+            }, 
+            {
+                "Y": 5.932, 
+                "scenario": "FM_4_2"
+            }, 
+            {
+                "Y": 4.146, 
+                "scenario": "EN_1"
+            }, 
+            {
+                "Y": 5.351, 
+                "scenario": "MP_1"
+            }, 
+            {
+                "Y": 4.885, 
+                "scenario": "MP_2"
+            }, 
+            {
+                "Y": 4.74, 
+                "scenario": "MP_3"
+            }, 
+            {
+                "Y": 4.8, 
+                "scenario": "MP_4"
+            }
+        ]
+    }, 
+    "price_per_oak": {
+        "title": "Price per Oak", 
+        "value": [
+            {
+                "Y": 0.0, 
+                "scenario": "baseline"
+            }, 
+            {
+                "Y": 94.12071939, 
+                "scenario": "scen2"
+            }, 
+            {
+                "Y": -635.8379888, 
+                "scenario": "RS_1"
+            }, 
+            {
+                "Y": 79.31103261, 
+                "scenario": "RS_2"
+            }, 
+            {
+                "Y": 110.227771, 
+                "scenario": "RS_3"
+            }, 
+            {
+                "Y": 180.8277672, 
+                "scenario": "FM_1"
+            }, 
+            {
+                "Y": 171.4488234, 
+                "scenario": "FM_2"
+            }, 
+            {
+                "Y": 642.957021, 
+                "scenario": "FM_3"
+            }, 
+            {
+                "Y": 301.2704918, 
+                "scenario": "LO_1"
+            }, 
+            {
+                "Y": 1306.062099, 
+                "scenario": "LO_2"
+            }, 
+            {
+                "Y": 173.5767373, 
+                "scenario": "LO_3"
+            }, 
+            {
+                "Y": -1721.273292, 
+                "scenario": "FM_4"
+            }, 
+            {
+                "Y": -1721.273292, 
+                "scenario": "FM_4_2"
+            }, 
+            {
+                "Y": 41.18664059, 
+                "scenario": "EN_1"
+            }, 
+            {
+                "Y": 107.8997912, 
+                "scenario": "MP_1"
+            }, 
+            {
+                "Y": 59.20813691, 
+                "scenario": "MP_2"
+            }, 
+            {
+                "Y": 73.96547085, 
+                "scenario": "MP_3"
+            }, 
+            {
+                "Y": 77.262929, 
+                "scenario": "MP_4"
+            }
+        ]
+    }
+}
