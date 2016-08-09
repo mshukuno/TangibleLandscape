@@ -154,7 +154,7 @@ circle {
 	cursor: pointer;
 }
 
-tspan{
+.legend-text {
 	fill: rgba(64, 255, 12, 1);
 	font-size: 18px;
 }
@@ -186,9 +186,9 @@ tspan{
 	float: left;
 }
 
-.text bar-line{
+/*.text bar-line{
 	color: rgba(64, 255, 12, 1);
-}
+}*/
 
 text.radar-text{
 	text-shadow: 2px 2px 1px #FFF,

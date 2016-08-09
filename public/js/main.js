@@ -1,8 +1,8 @@
 var tangeo = {
-    "locationId": null,
-    "baseline": null,
-    "dataKeys": {
-        "n_dead_oaks": 'Number of Dead Oaks',
+    'locationId': null,
+    'baseline': null,
+    'dataKeys': {
+        'n_dead_oaks': 'Number of Dead Oaks',
         'percent_dead_oaks': 'Percentage of Dead Oaks',
         'infected_area_ha': 'Infected Area (ha)',
         'money_spent': 'Money Spent',
@@ -13,15 +13,15 @@ var tangeo = {
 
 var baseline = [
   {
-    "try": '',
-    "n_dead_oaks": 56784,
-    "percent_dead_oaks": 5.898,
-    "infected_area_ha": 3417,
-    "money_spent": 0,
-    "area_treated_ha": 0,
-    "price_per_oak": 0,
-    "player": {
-        "name": "Baseline"
+    'try': '',
+    'n_dead_oaks': 56784,
+    'percent_dead_oaks': 5.898,
+    'infected_area_ha': 3417,
+    'money_spent': 0,
+    'area_treated_ha': 0,
+    'price_per_oak': 0,
+    'player': {
+        'name': 'Baseline'
     }
   }
 ]
@@ -129,8 +129,8 @@ function getAllLocations(eleId) {
 function getResultsByLocationId(locid) {
     return $.parseJSON($.ajax({
         url: apiUrl + '/results/location/' + locid,
-        type: "GET",
-        async: false,  // This is important... please see ref below
+        type: 'GET',
+        async: false,
         success: function () {
             console.log('Success');
         },
@@ -178,67 +178,65 @@ function barLineChartFormatData(results, dataKeys){
 /////////////////////////////////////////////////////////
 /////////////////////////Table //////////////////////////
 /////////////////////////////////////////////////////////
-
-
 function tableVerticalHeader(tdata) {
-    d3.select("#player-table").select("table").remove();
+    d3.select('#player-table').select('table').remove();
     var headerNames = d3.keys(tdata[0]);
     var item = ''
-    headerNames.splice(0, 0, "#");
+    headerNames.splice(0, 0, '#');
     
     
     for (var i = 0; i < tdata.length; ++i) {
         if (i == 0) {
-            tdata[i]["#"] = "Baseline";
+            tdata[i]['#'] = 'Baseline';
         } else if (i == 1) {
-            tdata[i]["#"] = "First";
+            tdata[i]['#'] = 'First';
         } else if (i == 2) {
-            tdata[i]["#"] = "Second";
+            tdata[i]['#'] = 'Second';
         } else if (i == 3) {
-            tdata[i]["#"] = "Third";
+            tdata[i]['#'] = 'Third';
         }
     }
 
-    var table = d3.select("#player-table")
-        .append("table")
-        .attr("class", "table table-condensed table-bordered")
-        .attr("id", "player-table")
-        .style("width", "80%")
-        .style("margin", "auto");
+    var table = d3.select('#player-table')
+        .append('table')
+        .attr('class', 'table table-condensed table-bordered')
+        .attr('id', 'player-table')
+        .style('width', '80%')
+        .style('margin', 'auto');
 
-    var thead = table.append("thead");
-    var tbody = table.append("tbody");
+    var thead = table.append('thead');
+    var tbody = table.append('tbody');
 
     // append the header row
-    thead.append("tr")
-        .selectAll("th")
+    thead.append('tr')
+        .selectAll('th')
         .data(headerNames)
         .enter()
-        .append("th")
-        .style("text-align", "center")
-        .style("font-size", 30)
-        .style("color", "white")
+        .append('th')
+        .style('text-align', 'center')
+        .style('font-size', 30)
+        .style('color', 'white')
         .text(function(headerNames) {
             return headerNames;
         });
 
     // create a row for each object in the data
-    var rows = tbody.selectAll("tr")
+    var rows = tbody.selectAll('tr')
         .data(tdata)
         .enter()
-        .append("tr");
+        .append('tr');
 
     // create a cell in each row for each column
-    var cells = rows.selectAll("td")
+    var cells = rows.selectAll('td')
         .data(function(row) {
             return headerNames.map(function(headerName) {
                 return row[headerName];
             });
         })
         .enter()
-        .append("td")
-        .style("font-size", 36)
-        .style("color", "white")
+        .append('td')
+        .style('font-size', 36)
+        .style('color', 'white')
         .text(function(d) {
             return d;
         });
@@ -249,10 +247,10 @@ function tableVerticalHeader(tdata) {
 //*********************************
 $(document).ready(function() {
     
-    var test = $("#play").height() * 0.75;
-    console.log("play page height: ", test);
-    $("#play-canvas").height(test);
-    $("#table-canvas").height(test);
+    var test = $('#play').height() * 0.75;
+    console.log('play page height: ', test);
+    $('#play-canvas').height(test);
+    $('#table-canvas').height(test);
     // Handler for .ready() called.
     $('#location-submit').on('click', function(e) {
         e.preventDefault();
@@ -275,38 +273,38 @@ $(document).ready(function() {
     getAllPlayers();
 
 
-    $("#bar-nodo").click();
-    $("#line-ms").click();
-    var barData = "n_dead_oaks";
-    var lineData = "money_spent";
+    $('#bar-nodo').click();
+    $('#line-ms').click();
+    var barData = 'n_dead_oaks';
+    var lineData = 'money_spent';
     var result = getResultsByLocationId(1);
     var jsonResult = barLineChartFormatData(result, tangeo.dataKeys);
     console.log(jsonResult);
     
     drawChart(jsonResult, barData, lineData);
-    $(".dropdown-menu").on("click", "li", function(e) {
-        //console.log("You clicked the drop downs", e.target)
+    $('.dropdown-menu').on('click', 'li', function(e) {
+        //console.log('You clicked the drop downs', e.target)
         var parent = $(this).parent()[0].id;
         console.log(parent)
-        if (parent === "bar-dropdown" || parent === "line-dropdown") {
+        if (parent === 'bar-dropdown' || parent === 'line-dropdown') {
             var clicked = e.target.id;
             var sel, field;
-            if (typeof clicked != "undefined") {
-                sel = clicked.split("-")[0]; // bar or line
-                field = clicked.split("-")[1]; // dara column
-                if (sel == "bar") {
+            if (typeof clicked != 'undefined') {
+                sel = clicked.split('-')[0]; // bar or line
+                field = clicked.split('-')[1]; // dara column
+                if (sel == 'bar') {
                     barData = dataIdList[field];
-                } else if (sel == "line") {
+                } else if (sel == 'line') {
                     lineData = dataIdList[field];
                 }
-                //console.log("bardata", barData, "lineData", lineData);
-                //svg2.selectAll("g.legend-pointer").remove();
+                //console.log('bardata', barData, 'lineData', lineData);
+                //svg2.selectAll('g.legend-pointer').remove();
             }
             drawChart(jsonResult, barData, lineData);
 
-        } else if (parent === "search-player") {
+        } else if (parent === 'search-player') {
             $('#' + srcfg.svgId).html('');
-            var playerId = $(this).text().split(":")[0];
+            var playerId = $(this).text().split(':')[0];
             console.log('player id', playerId);
             if (tangeo.baseline != null){
                 getResultsById(playerId);
@@ -314,9 +312,9 @@ $(document).ready(function() {
                 alert('Select location');
             }
             
-        } else if (parent === "search-location") {
+        } else if (parent === 'search-location') {
             var location = $(this).text();
-            var locationId = $(this).text().split(":")[0];
+            var locationId = $(this).text().split(':')[0];
             console.log('location id', locationId);
             tangeo.locationId = locationId;
             getBaselineByLocId(locationId);
