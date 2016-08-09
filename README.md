@@ -64,4 +64,11 @@ The code below is tested on Ubuntu 14.04 (trusty).
     ```
     
 ## Snapshots
-![top page](https://github.com/mshukuno/TangibleLandscapeDashboard/blob/master/public/img/snapshot/data_page.png)
+Top page
+![top page](https://github.com/mshukuno/TangibleLandscapeDashboard/blob/master/public/img/snapshot/top_page.png)
+
+Play page
+![play page](https://github.com/mshukuno/TangibleLandscapeDashboard/blob/master/public/img/snapshot/play_page.png)
+
+Data page
+![data page](https://github.com/mshukuno/TangibleLandscapeDashboard/blob/master/public/img/snapshot/data_page.png)
