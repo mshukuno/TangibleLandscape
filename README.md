@@ -62,3 +62,6 @@ The code below is tested on Ubuntu 14.04 (trusty).
     ```
     localhost:3000
     ```
+    
+## Snapshots
+![top page](https://github.com/mshukuno/TangibleLandscapeDashboard/blob/master/public/img/snapshot/data_page.png)
