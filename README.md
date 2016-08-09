@@ -40,17 +40,8 @@ The code below is tested on Ubuntu 14.04 (trusty).
 
 9. Install Node modules:
     ```
-    //Install "express.js"
-    npm install -g express
-    npm install -g express-generator
-    // Check if express is installed
-    express -h
-    
-    // Inatall "body-parser.js", "underscore", "sequilize", and "sqlite3"
-    npm install body-parser
-    npm install underscore
-    npm install sequilize
-    npm install sqlite3
+    //Install "express.js", "body-parser.js", "underscore", "sequilize", and "sqlite3"
+    npm install
     ```
 
 10. Run Node.js server:
